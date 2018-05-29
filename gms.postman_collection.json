@@ -1,0 +1,267 @@
+{
+	"info": {
+		"_postman_id": "bc21c282-e538-49e8-a8d3-a5f17da1d455",
+		"name": "gms",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Retrieve all orders",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost/gms/public/api/orders",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"gms",
+						"public",
+						"api",
+						"orders"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Retrieve specific order",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost/gms/public/api/orders/show?id=6",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"gms",
+						"public",
+						"api",
+						"orders",
+						"show"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "6"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Store a new order",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "id",
+							"value": "15",
+							"type": "text"
+						},
+						{
+							"key": "regno",
+							"value": "567890",
+							"type": "text"
+						},
+						{
+							"key": "regstate",
+							"value": "NSW",
+							"type": "text"
+						},
+						{
+							"key": "custname",
+							"value": "David",
+							"type": "text"
+						},
+						{
+							"key": "custphone",
+							"value": "0433333333",
+							"type": "text"
+						},
+						{
+							"key": "vehbrand",
+							"value": "Toyota",
+							"type": "text"
+						},
+						{
+							"key": "vehmodel",
+							"value": "Corolla",
+							"type": "text"
+						},
+						{
+							"key": "vehyear",
+							"value": "2010",
+							"type": "text"
+						},
+						{
+							"key": "serialno",
+							"value": "qwerty",
+							"type": "text"
+						},
+						{
+							"key": "orderstatus",
+							"value": "0",
+							"type": "text"
+						},
+						{
+							"key": "createddate",
+							"value": "2018-05-03 00:00:00",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost/gms/public/api/orders/store",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"gms",
+						"public",
+						"api",
+						"orders",
+						"store"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update order",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "id",
+							"value": "15",
+							"type": "text"
+						},
+						{
+							"key": "regno",
+							"value": "567890",
+							"type": "text"
+						},
+						{
+							"key": "regstate",
+							"value": "NSW",
+							"type": "text"
+						},
+						{
+							"key": "custname",
+							"value": "David",
+							"type": "text"
+						},
+						{
+							"key": "custphone",
+							"value": "0433333333",
+							"type": "text"
+						},
+						{
+							"key": "vehbrand",
+							"value": "Toyota",
+							"type": "text"
+						},
+						{
+							"key": "vehmodel",
+							"value": "Corolla",
+							"type": "text"
+						},
+						{
+							"key": "vehyear",
+							"value": "2010",
+							"type": "text"
+						},
+						{
+							"key": "serialno",
+							"value": "qwerty",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost/gms/public/api/orders/update",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"gms",
+						"public",
+						"api",
+						"orders",
+						"update"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete a order",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "id",
+							"value": "5",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost/gms/public/api/orders/destroy?id=16",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"gms",
+						"public",
+						"api",
+						"orders",
+						"destroy"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "16"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

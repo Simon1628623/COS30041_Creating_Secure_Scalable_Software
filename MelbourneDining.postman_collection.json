@@ -1,0 +1,981 @@
+{
+	"info": {
+		"_postman_id": "a56afc64-3f9b-43bf-9b66-8be6f732ab00",
+		"name": "MelbourneDining",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Country Model",
+			"description": "",
+			"item": [
+				{
+					"name": "Country Create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "localhost/melbournedining/public/api/countries/store?id&name=Straya&created_at&updated_at",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"melbournedining",
+								"public",
+								"api",
+								"countries",
+								"store"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": null
+								},
+								{
+									"key": "name",
+									"value": "Straya"
+								},
+								{
+									"key": "created_at",
+									"value": null
+								},
+								{
+									"key": "updated_at",
+									"value": null
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Country Update",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "localhost/melbournedining/public/api/countries/update?id=4&name=Straya Eyy",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"melbournedining",
+								"public",
+								"api",
+								"countries",
+								"update"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "4"
+								},
+								{
+									"key": "name",
+									"value": "Straya Eyy"
+								},
+								{
+									"key": "created_at",
+									"value": null,
+									"disabled": true
+								},
+								{
+									"key": "updated_at",
+									"value": null,
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Country Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "localhost/melbournedining/public/api/countries/destroy?id=5",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"melbournedining",
+								"public",
+								"api",
+								"countries",
+								"destroy"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "5"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Category Model",
+			"description": "",
+			"item": [
+				{
+					"name": "Category Create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "localhost/melbournedining/public/api/categories/store?id&name=Mexican&created_at&updated_at",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"melbournedining",
+								"public",
+								"api",
+								"categories",
+								"store"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": null
+								},
+								{
+									"key": "name",
+									"value": "Mexican"
+								},
+								{
+									"key": "created_at",
+									"value": null
+								},
+								{
+									"key": "updated_at",
+									"value": null
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Category Update",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "localhost/melbournedining/public/api/categories/update?id=3&name=Indian&created_at&updated_at",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"melbournedining",
+								"public",
+								"api",
+								"categories",
+								"update"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "3"
+								},
+								{
+									"key": "name",
+									"value": "Indian"
+								},
+								{
+									"key": "created_at",
+									"value": null
+								},
+								{
+									"key": "updated_at",
+									"value": null
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Category Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "localhost/melbournedining/public/api/categories/destroy?id=7",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"melbournedining",
+								"public",
+								"api",
+								"categories",
+								"destroy"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "7"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "User Model",
+			"description": "",
+			"item": [
+				{
+					"name": "User Create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "localhost/melbournedining/public/api/users/store?id&name=Joe&email=Joe@Joe.com&password=123&created_at&updated_at&country_id=1",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"melbournedining",
+								"public",
+								"api",
+								"users",
+								"store"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": null
+								},
+								{
+									"key": "name",
+									"value": "Joe"
+								},
+								{
+									"key": "email",
+									"value": "Joe@Joe.com"
+								},
+								{
+									"key": "password",
+									"value": "123"
+								},
+								{
+									"key": "created_at",
+									"value": null
+								},
+								{
+									"key": "updated_at",
+									"value": null
+								},
+								{
+									"key": "country_id",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "User Update",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "localhost/melbournedining/public/api/users/update?id=2&name=Joe&email=Joe@Joe.com&password=123&created_at&updated_at&country_id=1",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"melbournedining",
+								"public",
+								"api",
+								"users",
+								"update"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "2"
+								},
+								{
+									"key": "name",
+									"value": "Joe"
+								},
+								{
+									"key": "email",
+									"value": "Joe@Joe.com"
+								},
+								{
+									"key": "password",
+									"value": "123"
+								},
+								{
+									"key": "created_at",
+									"value": null
+								},
+								{
+									"key": "updated_at",
+									"value": null
+								},
+								{
+									"key": "country_id",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "User Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "localhost/melbournedining/public/api/users/destroy?id=4",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"melbournedining",
+								"public",
+								"api",
+								"users",
+								"destroy"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "4"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Role Model",
+			"description": "",
+			"item": [
+				{
+					"name": "Role Create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "localhost/melbournedining/public/api/roles/store?id&name=Officer worker&created_at&updated_at",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"melbournedining",
+								"public",
+								"api",
+								"roles",
+								"store"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": null
+								},
+								{
+									"key": "name",
+									"value": "Officer worker"
+								},
+								{
+									"key": "created_at",
+									"value": null
+								},
+								{
+									"key": "updated_at",
+									"value": null
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Role Update",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "localhost/melbournedining/public/api/roles/update?id=4&name=Officer worker V2&created_at&updated_at",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"melbournedining",
+								"public",
+								"api",
+								"roles",
+								"update"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "4"
+								},
+								{
+									"key": "name",
+									"value": "Officer worker V2"
+								},
+								{
+									"key": "created_at",
+									"value": null
+								},
+								{
+									"key": "updated_at",
+									"value": null
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Role Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "localhost/melbournedining/public/api/roles/destroy?id=4",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"melbournedining",
+								"public",
+								"api",
+								"roles",
+								"destroy"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "4"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Restaurant Model",
+			"description": "",
+			"item": [
+				{
+					"name": "Restaurant Create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "localhost/melbournedining/public/api/restaurants/store?restid&restname=&restphone=0987c&restaddress1=1 lol stree&restaddress2=a&suburb=hawthorn&state=VIC&numberofseats=4&country_id=1&category_id=1",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"melbournedining",
+								"public",
+								"api",
+								"restaurants",
+								"store"
+							],
+							"query": [
+								{
+									"key": "restid",
+									"value": null
+								},
+								{
+									"key": "restname",
+									"value": ""
+								},
+								{
+									"key": "restphone",
+									"value": "0987c"
+								},
+								{
+									"key": "restaddress1",
+									"value": "1 lol stree"
+								},
+								{
+									"key": "restaddress2",
+									"value": "a"
+								},
+								{
+									"key": "suburb",
+									"value": "hawthorn"
+								},
+								{
+									"key": "state",
+									"value": "VIC"
+								},
+								{
+									"key": "numberofseats",
+									"value": "4"
+								},
+								{
+									"key": "country_id",
+									"value": "1"
+								},
+								{
+									"key": "category_id",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Restaurant Update",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "localhost/melbournedining/public/api/restaurants/update?restid=15&restname=&restphone=0987c&restaddress1=1 lol street&restaddress2=a&suburb=hawthorn&state=VIC&numberofseats=4&country_id=1&category_id=1",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"melbournedining",
+								"public",
+								"api",
+								"restaurants",
+								"update"
+							],
+							"query": [
+								{
+									"key": "restid",
+									"value": "15"
+								},
+								{
+									"key": "restname",
+									"value": ""
+								},
+								{
+									"key": "restphone",
+									"value": "0987c"
+								},
+								{
+									"key": "restaddress1",
+									"value": "1 lol street"
+								},
+								{
+									"key": "restaddress2",
+									"value": "a"
+								},
+								{
+									"key": "suburb",
+									"value": "hawthorn"
+								},
+								{
+									"key": "state",
+									"value": "VIC"
+								},
+								{
+									"key": "numberofseats",
+									"value": "4"
+								},
+								{
+									"key": "country_id",
+									"value": "1"
+								},
+								{
+									"key": "category_id",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Restaurant Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "localhost/melbournedining/public/api/restaurants/destroy?restid=",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"melbournedining",
+								"public",
+								"api",
+								"restaurants",
+								"destroy"
+							],
+							"query": [
+								{
+									"key": "restid",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "show posts from restaurant id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "localhost/melbournedining/public/api/restaurants/showposts?restid=1",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"melbournedining",
+								"public",
+								"api",
+								"restaurants",
+								"showposts"
+							],
+							"query": [
+								{
+									"key": "restid",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "show restaurants category and country",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "localhost/melbournedining/public/api/restaurants/showlocationcategory?category_id=2&country_id=2",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"melbournedining",
+								"public",
+								"api",
+								"restaurants",
+								"showlocationcategory"
+							],
+							"query": [
+								{
+									"key": "category_id",
+									"value": "2"
+								},
+								{
+									"key": "country_id",
+									"value": "2"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Post Model",
+			"description": "",
+			"item": [
+				{
+					"name": "Post Create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "content",
+									"value": "Well DOne",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "restaurant_id",
+									"value": "1",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "user_id",
+									"value": "1",
+									"description": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost/melbournedining/public/api/posts/store?id=7&content=well done&restaurant_id=1&user_id=1",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"melbournedining",
+								"public",
+								"api",
+								"posts",
+								"store"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "7"
+								},
+								{
+									"key": "content",
+									"value": "well done"
+								},
+								{
+									"key": "created_at",
+									"value": "2018-05-03 00:00:00",
+									"disabled": true
+								},
+								{
+									"key": "updated_at",
+									"value": "2018-05-03 00:00:00",
+									"disabled": true
+								},
+								{
+									"key": "restaurant_id",
+									"value": "1"
+								},
+								{
+									"key": "user_id",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Post Update",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "localhost/melbournedining/public/api/posts/update?restaurant_id=7&id=7&content=WOW&user_id=1",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"melbournedining",
+								"public",
+								"api",
+								"posts",
+								"update"
+							],
+							"query": [
+								{
+									"key": "restaurant_id",
+									"value": "7"
+								},
+								{
+									"key": "id",
+									"value": "7"
+								},
+								{
+									"key": "content",
+									"value": "WOW"
+								},
+								{
+									"key": "user_id",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Post Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "localhost/melbournedining/public/api/posts/destroy?restaurant_id=7",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"melbournedining",
+								"public",
+								"api",
+								"posts",
+								"destroy"
+							],
+							"query": [
+								{
+									"key": "restaurant_id",
+									"value": "7"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Comment Model",
+			"description": "",
+			"item": [
+				{
+					"name": "Comment Create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "localhost/melbournedining/public/api/comments/store?id=13&content=WOW&post_id=8&user_id=1",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"melbournedining",
+								"public",
+								"api",
+								"comments",
+								"store"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "13"
+								},
+								{
+									"key": "content",
+									"value": "WOW"
+								},
+								{
+									"key": "post_id",
+									"value": "8"
+								},
+								{
+									"key": "user_id",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Comment Update",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "localhost/melbournedining/public/api/comments/update?id=13&content=TOO COOL&created_at&updated_at&post_id=1&user_id=1",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"melbournedining",
+								"public",
+								"api",
+								"comments",
+								"update"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "13"
+								},
+								{
+									"key": "content",
+									"value": "TOO COOL"
+								},
+								{
+									"key": "created_at",
+									"value": null
+								},
+								{
+									"key": "updated_at",
+									"value": null
+								},
+								{
+									"key": "post_id",
+									"value": "1"
+								},
+								{
+									"key": "user_id",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Comment Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "localhost/melbournedining/public/api/comments/destroy?id=13",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"melbournedining",
+								"public",
+								"api",
+								"comments",
+								"destroy"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "13"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
